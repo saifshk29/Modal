@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MODAL SHARE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <!--card-->
+      <div class="card-main">
+        <div class="img">
+          <img
+            src="Snapchat-1034820239.jpg"
+            width="150px"
+            height="150px"
+            alt=""
+          />
+        </div>
+        <div class="heading kanit-regular">
+          <p>Saif Shaikh</p>
+        </div>
+        <div class="subheading">
+          <p class="student">Student, PCCOE Akurdi</p>
+        </div>
+        <div class="btns">
+          <button onclick="modal() ,overlayvis()" class="share">
+            <i class="fa-solid fa-share"></i>Share my Profile
+          </button>
+          <button  class="follow">Follow Me</button>
+        </div>
+      </div>
+      <!--MODAL-->
+      <div class="modal">
+        <div class="modalinner">
+          <div class="modalheader">
+            Share My Profile 
+            <i onclick="removemodal(),removeoverlayvis()" class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="modaltext">
+            <p>Share this via</p>
+          </div>
+          <div class="bottom">
+            <a class="link" href=""><i class="fa-brands fa-instagram radius insta"></i></a>
+            <a class="link" href=""><i class="fa-brands fa-x-twitter radius"></i></a>
+            <a class="link" href="https://github.com/saifshk29"><i class="fa-brands fa-github radius git"></i></a>
+            <a class="link" href=""><i class="fa-brands fa-facebook radius"></i></a>
+            <a class="link" href=""><i class="fa-brands fa-linkedin radius"></i></a>  
+          </div>
+        </div>
+        
+      </div>
+      <!--OVERLAY-->
+      <div class="overlay" onclick="removeoverlayvis(),removemodal()">
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ec429c9a0e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
